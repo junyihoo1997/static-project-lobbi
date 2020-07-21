@@ -3,7 +3,11 @@
     <div class="transaction-items container">
       <div class="transaction-section-left">
         <div class="transaction-image-container">
-          <img :src="require('@/assets/images/TransactionImage.png')" alt="Bridging Relationships" class="transaction-image" />
+          <img
+            :src="require('@/assets/images/TransactionImage.png')"
+            alt="Bridging Relationships"
+            class="transaction-image"
+          />
         </div>
       </div>
       <div class="transaction-section-right">
@@ -29,7 +33,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .transaction-layout {
   width: 100%;
   height: 600px;
@@ -41,13 +45,13 @@ export default {
   flex-wrap: wrap;
   height: 100%;
 }
-.transaction-section-right h1 {
-  color: #fe5129;
-  font-size: 1.5rem;
-  font-weight: 700 !important;
-}
 .transaction-section-right {
   order: 2;
+  h1 {
+    color: #fe5129;
+    font-size: 1.75rem;
+    font-weight: 700 !important;
+  }
 }
 
 .transaction-section-left {
@@ -81,7 +85,7 @@ export default {
   .transaction-section-right {
     order: 2;
   }
-  .transaction-items{
+  .transaction-items {
     justify-content: center;
   }
 }
@@ -92,16 +96,17 @@ export default {
 
 .transaction-description {
   color: #929292;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 .transaction-button {
   font-size: 1rem;
   border-style: solid;
   border-color: #fe5129;
+  margin-top: 10px;
   border-radius: 40px;
   background-color: #fe5129;
-  padding: 5px 35px 5px 35px;
+  padding: 5px 55px 5px 55px;
   color: #ffffff;
   outline: none;
 }

@@ -5,7 +5,7 @@
     <Relationships />
     <Moments />
     <Transactions />
-    <!-- <WhyLobbi /> -->
+    <WhyLobbi />
     <Review />
     <Subscription/>
     <!-- <Faq/> -->
@@ -22,7 +22,7 @@ import Landing from "./components/Landing.vue";
 import Relationships from "./components/Relationships.vue";
 import Moments from "./components/Moments.vue";
 import Transactions from "./components/Transactions.vue";
-// import WhyLobbi from "./components/WhyLobbi.vue";
+import WhyLobbi from "./components/WhyLobbi.vue";
 import Review from "./components/Review.vue";
 import Subscription from "./components/Subscription.vue";
 // import Faq from "./components/Faq.vue";
@@ -42,7 +42,7 @@ export default {
     Relationships,
     Moments,
     Transactions,
-    // WhyLobbi,
+    WhyLobbi,
     Review,
     Subscription,
     // Faq,
@@ -64,4 +64,6 @@ export default {
   color: #2c3e50;
   margin-top: 60px; */
 }
+
+
 </style>

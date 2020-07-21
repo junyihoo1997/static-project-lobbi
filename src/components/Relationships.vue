@@ -13,7 +13,6 @@
       <div class="relationship-section-right">
         <h1>Bridging Relationships</h1>
         <div class="relationship-description">Texting, voice &amp; video call in your fingertips</div>
-        <br />
         <div class="relationship-button-group">
           <button class="relationship-button">Learn More</button>
           <button class="relationship-button-filled">Learn More</button>
@@ -32,7 +31,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .relationship-layout {
   width: 100%;
   height: 600px;
@@ -46,18 +45,18 @@ export default {
 }
 .relationship-items h1 {
   color: #fe5129;
-  font-size: 1.5rem;
-  font-weight: 700 !important;
+  font-size: 1.75rem;
+  font-weight: 700;
 }
 
 .relationship-description {
   color: #929292;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 .relationship-section-right {
   order: 2;
-  width: 400px;
+  width: 450px;
 }
 
 .relationship-section-left {
@@ -102,6 +101,7 @@ export default {
   flex-wrap: wrap;
   justify-content: space-between;
   width: 100%;
+  margin-top: 20px;
 }
 
 .relationship-button {
@@ -109,7 +109,7 @@ export default {
   border-color: #fe5129;
   border-radius: 40px;
   background-color: transparent;
-  padding: 5px 35px 5px 35px;
+  padding: 5px 55px 5px 55px;
   color: #fe5129;
   margin-bottom: 10px;
   outline: none;
@@ -120,7 +120,7 @@ export default {
   border-color: #fe5129;
   border-radius: 40px;
   background-color: #fe5129;
-  padding: 5px 35px 5px 35px;
+  padding: 5px 55px 5px 55px;
   color: #ffffff;
   margin-bottom: 10px;
   outline: none;

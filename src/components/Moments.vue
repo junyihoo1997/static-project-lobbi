@@ -33,7 +33,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .moment-layout {
   width: 100%;
   height: 600px;
@@ -48,7 +48,7 @@ export default {
 
 .moment-section-left h1 {
   color: #fe5129;
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   font-weight: 700 !important;
   order: 1;
 }
@@ -83,7 +83,7 @@ export default {
   .moment-section-left {
     order: 2;
   }
-  .moment-items{
+  .moment-items {
     justify-content: center;
   }
 }
@@ -94,7 +94,7 @@ export default {
 
 .moment-description {
   color: #929292;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 .moment-button {
@@ -103,7 +103,8 @@ export default {
   border-color: #fe5129;
   border-radius: 40px;
   background-color: #fe5129;
-  padding: 5px 35px 5px 35px;
+  margin-top: 10px;
+  padding: 5px 55px 5px 55px;
   outline: none;
   color: #ffffff;
 }

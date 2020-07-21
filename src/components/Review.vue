@@ -1,8 +1,10 @@
 <template>
   <div class="review-layout">
     <div class="review-items container">
-      <h1>Review</h1>
-      <p>kind words from app users</p>
+      <div class="review-header">
+        <h1>Review</h1>
+        <p>kind words from app users</p>
+      </div>
       <div>
         <img :src="require('@/assets/images/ReviewImage.png')" alt />
       </div>
@@ -22,18 +24,29 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .review-layout {
   width: 100%;
   height: 800px;
+  border-style: solid;
 }
 .review-items {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
   text-align: center;
   height: 100%;
 }
 
+.review-header {
+  h1 {
+    font-weight: 700;
+  }
+  p {
+    letter-spacing: 0.1rem;
+    word-spacing: 0.5rem;
+    color: #929292;
+  }
+}
 </style>
