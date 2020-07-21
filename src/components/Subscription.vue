@@ -24,13 +24,15 @@ export default {
 <style scoped>
 .subscription-layout {
   width: 100%;
-  height: 40vh;
-  background-color: rgb(240, 240, 240);
+  height: 500px;
+  background-color: #F2F2F2;
 }
 .subscription-items {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 40vh;
+  flex-wrap: wrap;
+
+  height: 100%;
 }
 </style>

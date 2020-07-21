@@ -89,12 +89,13 @@ export default {
 <style scoped>
 .whyLobbi-layout {
   width: 100%;
-  height: 80vh;
+  height: 1000px;
 }
 .whyLobbi-header {
   display: flex;
   justify-content: center;
   text-align: center;
+  
 }
 .whyLobbi-items {
   display: flex;

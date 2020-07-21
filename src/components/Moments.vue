@@ -2,15 +2,23 @@
   <div class="moment-layout">
     <div class="moment-items container">
       <div class="moment-section-left">
-        <h1>Capturing Moments</h1>
-        <p>Keep &amp; share your precious experiences with others</p>
-        <br />
+        <div class="moment-content">
+          <h1>Capturing Moments</h1>
+          <div class="moment-description">Keep &amp; share your precious experiences with others</div>
+        </div>
+
         <div class="moment-button-group">
-          <button>Learn More</button>
+          <button class="moment-button">Learn More</button>
         </div>
       </div>
       <div class="moment-section-right">
-        <img :src="require('@/assets/images/MomentImage.png')" alt="Bridging Relationships" />
+        <div class="moment-image-container">
+          <img
+            :src="require('@/assets/images/MomentImage.png')"
+            alt="Bridging Relationships"
+            class="moment-image"
+          />
+        </div>
       </div>
     </div>
   </div>
@@ -25,16 +33,74 @@ export default {
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .moment-layout {
   width: 100%;
-  height: 70vh;
+  height: 600px;
 }
-.moment-items{
+.moment-items {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 70vh;
+  flex-wrap: wrap;
+  height: 100%;
+}
+
+.moment-section-left h1 {
+  color: #fe5129;
+  font-size: 1.5rem;
+  font-weight: 700 !important;
+  order: 1;
+}
+.moment-section-right {
+  display: flex;
+  justify-content: center;
+  width: 400px;
+  order: 2;
+}
+
+.moment-image-container {
+  width: 100%;
+  height: 100%;
+}
+
+.moment-image {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 991px) {
+  .moment-image-container {
+    width: 50%;
+  }
+  .moment-layout {
+    width: 100%;
+    height: 500px;
+  }
+  .moment-section-right {
+    order: 1;
+  }
+  .moment-section-left {
+    order: 2;
+  }
+}
+
+.moment-content {
+  margin-bottom: 15px;
+}
+
+.moment-description {
+  color: #929292;
+  font-size: 1rem;
+}
+
+.moment-button {
+  font-size: 1rem;
+  border-style: solid;
+  border-color: #fe5129;
+  border-radius: 40px;
+  background-color: #fe5129;
+  padding: 5px 35px 5px 35px;
+  color: #ffffff;
 }
 </style>

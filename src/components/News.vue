@@ -20,7 +20,7 @@ export default {
 <style scoped>
 .news-layout {
   width: 100%;
-  height: 80vh;
+  height: 1000px;
 }
 .news-header {
   display: flex;

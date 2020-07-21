@@ -13,8 +13,12 @@
         </div>
       </div>
       <div class="landing-section-right">
-        <img :src="require('@/assets/images/LandingMobile_bg.png')" />
-        <img :src="require('@/assets/images/LandingMobile_sm.png')"/>
+        <div class="landing-mobile-big">
+          <img :src="require('@/assets/images/LandingMobile_bg.png')" />
+        </div>
+        <div class="landing-mobile-small">
+          <img :src="require('@/assets/images/LandingMobile_sm.png')" />
+        </div>
       </div>
     </div>
   </div>
@@ -32,12 +36,17 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .landing-layout {
+  position: relative;
   width: 100%;
-  height: 100vh;
+  height: 800px;
+  background-color: #F7F7F7;
 }
 
 .landing-image {
   position: absolute;
+  max-width: 100%;
+  width: auto;
+  height: auto;
   bottom: 0;
   right: 0;
 }
@@ -46,10 +55,20 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 100vh;
+  flex-wrap: wrap;
+  height: 100%;
 }
 
 .landing-button:hover {
   cursor: pointer;
+}
+
+.landing-mobile-big {
+  position: absolute;
+  /* left: 10px; */
+}
+
+.landing-mobile-small {
+  /* position: absolute; */
 }
 </style>

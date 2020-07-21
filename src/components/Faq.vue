@@ -26,7 +26,7 @@ export default {
 <style scoped>
 .faq-layout {
   width: 100%;
-  height: 80vh;
+  height: 1000px;
 }
 .faq-header {
   display: flex;
@@ -37,6 +37,7 @@ export default {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 70vh;
+    height: 100%;
+    border-style: solid;
 }
 </style>

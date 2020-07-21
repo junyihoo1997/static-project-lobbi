@@ -25,14 +25,14 @@ export default {
 <style scoped>
 .review-layout {
   width: 100%;
-  height: 70vh;
+  height: 800px;
 }
 .review-items {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
   text-align: center;
-  height: 70vh;
+  height: 100%;
 }
 </style>
