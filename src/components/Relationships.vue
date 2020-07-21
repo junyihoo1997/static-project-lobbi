@@ -86,6 +86,10 @@ export default {
   .relationship-section-right {
     order: 2;
   }
+
+  .relationship-items {
+    justify-content: center;
+  }
 }
 
 .relationship-image {
@@ -107,6 +111,7 @@ export default {
   background-color: transparent;
   padding: 5px 35px 5px 35px;
   color: #fe5129;
+  margin-bottom: 10px;
 }
 .relationship-button-filled {
   font-size: 1rem;
@@ -116,5 +121,7 @@ export default {
   background-color: #fe5129;
   padding: 5px 35px 5px 35px;
   color: #ffffff;
+  margin-bottom: 10px;
+
 }
 </style>

@@ -7,7 +7,7 @@
       </div>
       <div class="subscription-section-right">
         <h1>Stay With Us</h1>
-        <input type="text" id="fname" name="fname" placeholder="Your Email Address"/>
+        <input type="text" id="email" name="email" placeholder="Your Email Address"/><input type="submit" value="Subscribe">
         <br/>
         <small>I hereby confirm thath I understand &amp; accept your Privacy Policy and Terms &amp; Conditions of use of website.</small>
       </div>

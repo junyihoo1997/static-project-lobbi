@@ -13,11 +13,15 @@
         </div>
       </div>
       <div class="landing-section-right">
-        <div class="landing-mobile-big">
-          <img :src="require('@/assets/images/LandingMobile_bg.png')" />
-        </div>
-        <div class="landing-mobile-small">
-          <img :src="require('@/assets/images/LandingMobile_sm.png')" />
+        <div class="landing-image-container">
+          <!-- <img :src="require('@/assets/images/LandingMobile_bg.png')" class="landing-mobile-image" /> -->
+
+          <div class="landing-mobile-big">
+            <img :src="require('@/assets/images/LandingMobile_bg.png')"  />
+          </div>
+          <div class="landing-mobile-small">
+            <img :src="require('@/assets/images/LandingMobile_sm.png')" />
+          </div>
         </div>
       </div>
     </div>
@@ -38,8 +42,9 @@ export default {
 .landing-layout {
   position: relative;
   width: 100%;
-  height: 800px;
-  background-color: #F7F7F7;
+  height: 600px;
+  background-color: #f7f7f7;
+  overflow: hidden;
 }
 
 .landing-image {
@@ -59,16 +64,73 @@ export default {
   height: 100%;
 }
 
+.landing-section-left {
+  order: 1;
+  width: 400px;
+}
+
+.landing-section-left h1 {
+  font-size: 2.1rem;
+  font-weight: 700;
+}
+.landing-section-left p {
+  color: #929292;
+  font-size: 1rem;
+}
+
+.landing-section-right {
+  /* display: flex;
+  justify-content: center; */
+  order: 2;
+  width: 400px;
+}
+
 .landing-button:hover {
   cursor: pointer;
 }
 
 .landing-mobile-big {
   position: absolute;
-  /* left: 10px; */
+  top: 40px;
+  z-index: 2;
 }
 
 .landing-mobile-small {
-  /* position: absolute; */
+  position: relative;
+  left: 200px;
+  z-index: 1;
+}
+
+.landing-image-container {
+  width: 250px;
+  height: 100%;
+}
+
+.landing-mobile-image {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 991px) {
+  .landing-image-container {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+  }
+  .landing-mobile-image {
+    width: 50%;
+    height: auto;
+  }
+  .landing-items {
+    justify-content: center;
+  }
+  .landing-section-right {
+    display: none;
+    order: 1;
+  }
+  /* .landing-section-left {
+    order: 2;
+  } */
+
 }
 </style>

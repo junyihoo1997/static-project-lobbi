@@ -5,10 +5,10 @@
     <Relationships />
     <Moments />
     <Transactions />
-    <WhyLobbi />
+    <!-- <WhyLobbi /> -->
     <Review />
     <Subscription/>
-    <Faq/>
+    <!-- <Faq/> -->
     <News/>
     <Map/>
     <Contact/>
@@ -22,10 +22,10 @@ import Landing from "./components/Landing.vue";
 import Relationships from "./components/Relationships.vue";
 import Moments from "./components/Moments.vue";
 import Transactions from "./components/Transactions.vue";
-import WhyLobbi from "./components/WhyLobbi.vue";
+// import WhyLobbi from "./components/WhyLobbi.vue";
 import Review from "./components/Review.vue";
 import Subscription from "./components/Subscription.vue";
-import Faq from "./components/Faq.vue";
+// import Faq from "./components/Faq.vue";
 import News from "./components/News.vue";
 import Map from "./components/Map.vue";
 import Contact from "./components/Contact";
@@ -42,10 +42,10 @@ export default {
     Relationships,
     Moments,
     Transactions,
-    WhyLobbi,
+    // WhyLobbi,
     Review,
     Subscription,
-    Faq,
+    // Faq,
     News,
     Map,
     Contact,

@@ -7,32 +7,39 @@
         </a>
       </div>
       <div class="navigation-section-right">
-        <ul>
-          <li>
-            <a href="#whatislobbi">What is Lobbi</a>
-          </li>
-          <li>
-            <a href="#lobbiweb">Lobbi Web</a>
-          </li>
-          <li>
-            <a href="#features">Features</a>
-          </li>
-          <li>
-            <a href="#news">News</a>
-          </li>
-          <li>
-            <a href="#faq">Faq</a>
-          </li>
-          <li>
-            <a href="#contact">
-              Contact
-              <img
-                :src="require('@/assets/images/SearchIcon.png')"
-                class="navigation-search-icon"
-              />
-            </a>
-          </li>
-        </ul>
+        <div class="navigation-icon-container">
+          <div class="navigation-icon"></div>
+          <div class="navigation-icon"></div>
+          <div class="navigation-icon"></div>
+        </div>
+        <div class="navigation-content">
+          <ul>
+            <li>
+              <a href="#whatislobbi">What is Lobbi</a>
+            </li>
+            <li>
+              <a href="#lobbiweb">Lobbi Web</a>
+            </li>
+            <li>
+              <a href="#features">Features</a>
+            </li>
+            <li>
+              <a href="#news">News</a>
+            </li>
+            <li>
+              <a href="#faq">Faq</a>
+            </li>
+            <li>
+              <a href="#contact">
+                Contact
+                <img
+                  :src="require('@/assets/images/SearchIcon.png')"
+                  class="navigation-search-icon"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
@@ -54,6 +61,7 @@ export default {
   height: 100px;
   display: flex;
   justify-content: center;
+  overflow: hidden;
 }
 
 .navigation-items {
@@ -68,6 +76,17 @@ export default {
 }
 
 .navigation-section-right {
+}
+
+.navigation-icon-container {
+  display: none;
+}
+
+.navigation-icon {
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
 }
 
 ul {
@@ -87,9 +106,19 @@ li a {
   text-decoration: none;
   font-weight: 700;
 }
+
 .navigation-search-icon {
   width: 15px;
   margin-left: 3px;
   margin-bottom: 5px;
+}
+
+@media (max-width: 991px) {
+  .navigation-icon-container {
+    display: inline;
+  }
+  .navigation-content{
+    display: none;
+  }
 }
 </style>

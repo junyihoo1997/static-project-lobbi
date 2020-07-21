@@ -83,6 +83,9 @@ export default {
   .moment-section-left {
     order: 2;
   }
+  .moment-items{
+    justify-content: center;
+  }
 }
 
 .moment-content {
