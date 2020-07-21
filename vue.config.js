@@ -1,3 +1,5 @@
-module.exports={
-    publicPath: 'lobbi'
-}
+module.exports = {
+    publicPath: process.env.NODE_ENV === 'production'
+      ? '/lobbi/'
+      : '/'
+  }
