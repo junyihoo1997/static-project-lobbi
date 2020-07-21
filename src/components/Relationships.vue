@@ -112,6 +112,7 @@ export default {
   padding: 5px 35px 5px 35px;
   color: #fe5129;
   margin-bottom: 10px;
+  outline: none;
 }
 .relationship-button-filled {
   font-size: 1rem;
@@ -122,6 +123,6 @@ export default {
   padding: 5px 35px 5px 35px;
   color: #ffffff;
   margin-bottom: 10px;
-
+  outline: none;
 }
 </style>

@@ -103,5 +103,6 @@ export default {
   background-color: #fe5129;
   padding: 5px 35px 5px 35px;
   color: #ffffff;
+  outline: none;
 }
 </style>

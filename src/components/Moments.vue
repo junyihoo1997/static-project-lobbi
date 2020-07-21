@@ -104,6 +104,7 @@ export default {
   border-radius: 40px;
   background-color: #fe5129;
   padding: 5px 35px 5px 35px;
+  outline: none;
   color: #ffffff;
 }
 </style>
