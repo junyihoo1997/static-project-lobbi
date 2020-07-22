@@ -8,15 +8,15 @@
         <div class="footer-content">
           <ul>
             <li>
-              <a href="#whatislobbi">Help &amp; Feedback</a>
+              <a href="#feedback">Help &amp; Feedback</a>
             </li>
             <li>|</li>
             <li>
-              <a href="#lobbiweb">Terms of Use</a>
+              <a href="#term-of-use">Terms of Use</a>
             </li>
             <li>|</li>
             <li>
-              <a href="#features">Privacy Policy</a>
+              <a href="#privacy-policy">Privacy Policy</a>
             </li>
           </ul>
         </div>
@@ -85,6 +85,9 @@ export default {};
     color: #929292;
     padding: 14px 16px;
     text-decoration: none;
+  }
+  li a:hover {
+    color: #ffffff;
   }
 }
 

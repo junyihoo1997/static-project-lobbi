@@ -15,10 +15,10 @@
         <div class="navigation-content">
           <ul>
             <li>
-              <a href="#whatislobbi">What is Lobbi</a>
+              <a href="#what-is-lobbi">What is Lobbi</a>
             </li>
             <li>
-              <a href="#lobbiweb">Lobbi Web</a>
+              <a href="#lobbi-web">Lobbi Web</a>
             </li>
             <li>
               <a href="#features">Features</a>
