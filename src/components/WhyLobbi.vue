@@ -108,7 +108,6 @@ export default {
 .whyLobbi-layout {
   width: 100%;
   height: 900px;
-  border-style: solid;;
 }
 .whyLobbi-header {
   display: flex;
@@ -129,7 +128,6 @@ export default {
 .whyLobbi-items {
   display: flex;
   justify-content: space-evenly;
-  /* flex-wrap: wrap; */
   align-items: center;
 }
 
@@ -147,7 +145,6 @@ export default {
 .whyLobbi-section-left {
   order: 1;
   text-align: right;
-  /* min-width: 400px; */
   width: 400px;
   height: 500px;
   display: flex;
@@ -164,7 +161,6 @@ export default {
 
 .whyLobbi-section-right {
   order: 3;
-  /* min-width: 400px; */
   width: 400px;
   height: 500px;
   display: flex;
@@ -250,11 +246,6 @@ export default {
   }
   .whyLobbi-section-left {
     text-align: left;
-    /* height: 400px; */
-    /* width: auto; */
-  }
-  .whyLobbi-section-right {
-    /* height: 400px; */
   }
 }
 @media (max-width: 500px) {

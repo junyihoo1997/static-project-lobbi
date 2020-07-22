@@ -7,12 +7,12 @@
     <Transactions />
     <WhyLobbi />
     <Review />
-    <Subscription/>
-    <!-- <Faq/> -->
-    <News/>
-    <Map/>
-    <Contact/>
-    <Footer/>
+    <Subscription />
+    <Faq />
+    <News />
+    <Map />
+    <Contact />
+    <Footer />
   </div>
 </template>
 
@@ -25,14 +25,11 @@ import Transactions from "./components/Transactions.vue";
 import WhyLobbi from "./components/WhyLobbi.vue";
 import Review from "./components/Review.vue";
 import Subscription from "./components/Subscription.vue";
-// import Faq from "./components/Faq.vue";
+import Faq from "./components/Faq.vue";
 import News from "./components/News.vue";
 import Map from "./components/Map.vue";
 import Contact from "./components/Contact";
-import Footer from "./components/Footer"
-
-
-
+import Footer from "./components/Footer";
 
 export default {
   name: "App",
@@ -45,7 +42,7 @@ export default {
     WhyLobbi,
     Review,
     Subscription,
-    // Faq,
+    Faq,
     News,
     Map,
     Contact,
@@ -57,13 +54,6 @@ export default {
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
-  font-size: 1rem ;
-  /* -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px; */
+  font-size: 1rem;
 }
-
-
 </style>

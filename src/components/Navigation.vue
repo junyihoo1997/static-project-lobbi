@@ -72,12 +72,6 @@ export default {
   width: 80%;
 }
 
-.navigation-section-left {
-}
-
-.navigation-section-right {
-}
-
 .navigation-icon-container {
   display: none;
 }
@@ -117,7 +111,7 @@ li a {
   .navigation-icon-container {
     display: inline;
   }
-  .navigation-content{
+  .navigation-content {
     display: none;
   }
 }

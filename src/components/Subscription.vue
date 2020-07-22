@@ -20,7 +20,6 @@
           <input type="submit" value="Subscribe" class="subscription-input-submit" />
         </div>
         <div class="subscription-condition-container">
-          <!-- <div>I hereby confirm that I understand &amp; accept your Privacy Policy and Terms &amp; Conditions of use of website.</div> -->
           <div>
             <small>I hereby confirm that I understand &amp; accept your Privacy Policy and Terms &amp; Conditions of use of website.</small>
           </div>
@@ -36,7 +35,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .subscription-layout {
   width: 100%;
   height: 500px;
@@ -48,21 +47,19 @@ export default {
   align-items: center;
   flex-wrap: wrap;
   height: 100%;
-  /* border-style: solid ; */
+  @media (max-width: 1200px) {
+    justify-content: center;
+  }
 }
 .subscription-section-left {
   text-align: center;
+  h1 {
+    font-weight: 700;
+  }
 }
-.subscription-section-left h1 {
-  font-weight: 700;
-}
+
 .subscription-image-button {
   padding: 15px;
-  /* margin: auto; */
-}
-
-.subscription-section-right{
-
 }
 
 .subscription-section-right h1 {
@@ -96,11 +93,7 @@ export default {
   margin: auto;
 }
 
-.subscription-condition-container div{
+.subscription-condition-container div {
   margin-left: 10px;
-}
-
-.subscription-container{
-  
 }
 </style>

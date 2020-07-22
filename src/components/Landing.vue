@@ -14,10 +14,8 @@
       </div>
       <div class="landing-section-right">
         <div class="landing-image-container">
-          <!-- <img :src="require('@/assets/images/LandingMobile_bg.png')" class="landing-mobile-image" /> -->
-
           <div class="landing-mobile-big">
-            <img :src="require('@/assets/images/LandingMobile_bg.png')"  />
+            <img :src="require('@/assets/images/LandingMobile_bg.png')" />
           </div>
           <div class="landing-mobile-small">
             <img :src="require('@/assets/images/LandingMobile_sm.png')" />
@@ -37,7 +35,6 @@ export default {
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .landing-layout {
   position: relative;
@@ -79,8 +76,6 @@ export default {
 }
 
 .landing-section-right {
-  /* display: flex;
-  justify-content: center; */
   order: 2;
   width: 400px;
 }
@@ -128,9 +123,5 @@ export default {
     display: none;
     order: 1;
   }
-  /* .landing-section-left {
-    order: 2;
-  } */
-
 }
 </style>

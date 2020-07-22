@@ -28,18 +28,19 @@ export default {
 .review-layout {
   width: 100%;
   height: 800px;
-  border-style: solid;
 }
 .review-items {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
-  text-align: center;
   height: 100%;
 }
 
 .review-header {
+  text-align: center;
+
+  height: 150px;
   h1 {
     font-weight: 700;
   }

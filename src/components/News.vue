@@ -17,7 +17,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .news-layout {
   width: 100%;
   height: 1000px;
@@ -25,6 +25,16 @@ export default {
 .news-header {
   display: flex;
   justify-content: center;
+  align-items: center;
+  height: 200px;
   text-align: center;
+  h1 {
+    font-weight: 700;
+  }
+  p {
+    letter-spacing: 0.1rem;
+    word-spacing: 0.5rem;
+    color: #929292;
+  }
 }
 </style>
