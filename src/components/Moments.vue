@@ -76,6 +76,8 @@ export default {
   .moment-layout {
     width: 100%;
     height: 500px;
+    margin-top: 50px;
+    margin-bottom: 50px;
   }
   .moment-section-right {
     order: 1;

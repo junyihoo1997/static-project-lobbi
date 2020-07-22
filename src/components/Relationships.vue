@@ -78,6 +78,9 @@ export default {
   .relationship-layout {
     width: 100%;
     height: 500px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
   }
   .relationship-section-left {
     order: 1;
@@ -108,6 +111,7 @@ export default {
   border-style: solid;
   border-color: #fe5129;
   border-radius: 40px;
+  border-width: 1px;
   background-color: transparent;
   padding: 5px 55px 5px 55px;
   color: #fe5129;

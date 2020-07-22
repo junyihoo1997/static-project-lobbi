@@ -123,8 +123,8 @@ export default {
     font-weight: 700;
   }
   p {
-    letter-spacing: 0.125rem;
-    word-spacing: 0.5rem;
+    letter-spacing: 0.15rem;
+    word-spacing: 0.6rem;
     color: #929292;
   }
 }

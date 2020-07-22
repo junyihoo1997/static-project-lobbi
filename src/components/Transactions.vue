@@ -78,6 +78,8 @@ export default {
   .transaction-layout {
     width: 100%;
     height: 500px;
+    margin-top: 50px;
+    margin-bottom: 50px;
   }
   .transaction-section-left {
     order: 1;
