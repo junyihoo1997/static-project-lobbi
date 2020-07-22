@@ -85,6 +85,7 @@ export default {
     order: 1;
   }
   .transaction-section-right {
+    text-align: center;
     order: 2;
   }
   .transaction-items {

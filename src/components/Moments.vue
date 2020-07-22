@@ -83,6 +83,7 @@ export default {
     order: 1;
   }
   .moment-section-left {
+    text-align: center;
     order: 2;
   }
   .moment-items {

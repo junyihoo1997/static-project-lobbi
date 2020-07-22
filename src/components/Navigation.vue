@@ -7,7 +7,7 @@
         </a>
       </div>
       <div class="navigation-section-right">
-        <div class="navigation-icon-container">
+        <div class="navigation-icon-container" v-on:click="navClick()">
           <div class="navigation-icon"></div>
           <div class="navigation-icon"></div>
           <div class="navigation-icon"></div>
@@ -50,6 +50,14 @@ export default {
   name: "Navigation",
   props: {
     msg: String
+  },
+  data: () => {
+    return {};
+  },
+  methods: {
+    navClick() {
+      console.log("sdadsa");
+    }
   }
 };
 </script>

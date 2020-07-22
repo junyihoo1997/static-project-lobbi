@@ -47,6 +47,9 @@ export default {
     Map,
     Contact,
     Footer
+  },
+  mounted(){
+    console.log("To clear this error, please provide your own Google Map Api Key for google map feature. As tested at my side location is correct.")
   }
 };
 </script>

@@ -80,17 +80,23 @@ export default {
     height: 500px;
     margin-top: 50px;
     margin-bottom: 50px;
-
   }
   .relationship-section-left {
     order: 1;
   }
   .relationship-section-right {
+    text-align: center;
     order: 2;
   }
 
   .relationship-items {
     justify-content: center;
+  }
+}
+
+@media(max-width: 420px){
+   .relationship-button-group {
+    justify-content: center!important;
   }
 }
 
