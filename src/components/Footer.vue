@@ -34,10 +34,11 @@ export default {};
   width: 100%;
   height: 60px;
   background-color: #3b3b3b;
+  font-size: 0.75rem;
   @media (max-width: 1024px) {
     height: 80px;
   }
-  @media (max-width: 600px) {
+  @media (max-width: 500px) {
     height: 250px;
   }
 }
@@ -64,19 +65,19 @@ export default {};
 
   li {
     display: inline;
-    @media (max-width: 600px) {
+    @media (max-width: 500px) {
       display: flex;
       justify-content: center;
     }
   }
   li:nth-child(2) {
-    @media (max-width: 600px) {
+    @media (max-width: 500px) {
       display: none;
     }
   }
 
   li:nth-child(4) {
-    @media (max-width: 600px) {
+    @media (max-width: 500px) {
       display: none;
     }
   }
@@ -91,6 +92,4 @@ export default {};
   }
 }
 
-@media (max-width: 991px) {
-}
 </style>

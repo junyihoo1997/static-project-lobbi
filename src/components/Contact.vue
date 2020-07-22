@@ -19,7 +19,7 @@
 
           <div class="contact-section-left-info" v-for="data in contactInfo" :key="data.id">
             <div class="contact-icon-container">
-              <img :src="require('@/assets/images/AddressIcon.png')" class="contact-icon" />
+              <img :src="require('@/assets/images/'+ data.imageUrl)" class="contact-icon" />
             </div>
             <div class="contact-info-title">
               <b>{{data.title}}</b>
@@ -39,7 +39,7 @@
               </div>
 
               <div class="contact-icon-container">
-                <img :src="require('@/assets/images/Instagram.jpg')" class="contact-icon" />
+                <img :src="require('@/assets/images/Instagram.png')" class="contact-icon" />
               </div>
             </div>
           </div>
@@ -47,18 +47,15 @@
 
         <!-- section right -->
         <div class="contact-section-right">
-          <p>Drop us a message for business opportunity.</p>
+          <b>Drop us a message for business opportunity.</b>
           <div>
-            <input class="contact-form-input" id="name" type="text" name="name" placeholder="Name" />
-            <input
-              class="contact-form-input"
-              id="mobile"
-              type="text"
-              name="mobile"
-              placeholder="Mobile"
-            />
+            <input class="contact-form-input" type="text" name="name" placeholder="Name" />
+            <input class="contact-form-input" type="text" name="mobile" placeholder="Mobile" />
             <input class="contact-form-input" type="text" name="email" placeholder="Email" />
-            <textarea class="contact-form-input" name="message" placeholder="Message"></textarea>
+            <textarea class="contact-form-textarea" name="message" placeholder="Message"></textarea>
+          </div>
+          <div class="contact-submit">
+            <input type="Submit" value="Submit &gt;" />
           </div>
         </div>
       </div>
@@ -106,8 +103,14 @@ export default {
 <style lang="scss" scoped>
 .contact-layout {
   width: 100%;
-  height: 1000px;
+  height: 750px;
   background-color: #f2f2f2;
+  @media (max-width: 991px) {
+    height: 1200px;
+  }
+   @media (max-width: 500px) {
+    height: 1300px;
+  }
 }
 
 .contact-header {
@@ -140,6 +143,9 @@ export default {
   flex-direction: column;
   text-align: left;
   width: 450px;
+  @media (max-width: 991px) {
+    padding-bottom: 100px;
+  }
   @media (max-width: 500px) {
     width: 300px;
   }
@@ -156,9 +162,38 @@ export default {
   border-style: none;
   margin-top: 10px;
   margin-bottom: 10px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding: 10px;
+  padding-left: 20px;
   width: 100%;
+  outline: none;
+}
+
+.contact-form-textarea {
+  background-color: white;
+  border-style: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  padding-left: 20px;
+  padding-bottom: 70px;
+  outline: none;
+  width: 100%;
+  resize: none;
+}
+
+::placeholder {
+  color: #929292;
+}
+
+.contact-submit {
+  display: flex;
+  justify-content: flex-end;
+  input {
+    outline: none;
+    border-style: none;
+    background-color: transparent;
+    color: orange;
+  }
 }
 
 .contact-icon {
@@ -167,9 +202,9 @@ export default {
 }
 
 .contact-icon-container {
-  width: 25px;
-  max-width: 25px;
-  min-width: 25px;
+  width: 20px;
+  max-width: 20px;
+  min-width: 20px;
   margin-right: 10px;
 }
 
@@ -190,23 +225,18 @@ export default {
 
   .contact-info-description {
     width: 300px;
-    // word-spacing: 0.1rem;
   }
 }
 
 .contact-section-left-header {
   h1 {
     font-weight: 700;
-    color: #fe5129;
+    color: #FE5129;
   }
 }
 
-.contact-section-left-social-image-group{
+.contact-section-left-social-image-group {
   margin-top: 10px;
-  display:flex;
+  display: flex;
 }
-
-
-
-
 </style>
