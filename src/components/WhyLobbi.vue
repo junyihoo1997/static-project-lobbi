@@ -253,6 +253,11 @@ export default {
     padding: 10px;
     width: 350px;
   }
+
+  .whyLobbi-layout {
+    height: 1500px;
+  }
+
   .whyLobbi-section-right {
     padding: 10px;
     width: 350px;
@@ -266,6 +271,10 @@ export default {
 }
 
 @media (max-width: 400px) {
+  .whyLobbi-layout {
+    height: 1600px;
+  }
+
   .whyLobbi-section-left {
     width: 300px;
   }
