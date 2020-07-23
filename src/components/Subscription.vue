@@ -43,7 +43,7 @@ export default {
 }
 .subscription-items {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   height: 100%;
@@ -52,6 +52,8 @@ export default {
   }
 }
 .subscription-section-left {
+  width: 550px;
+
   text-align: center;
   h1 {
     font-weight: 700;
@@ -62,9 +64,13 @@ export default {
   padding: 15px;
 }
 
-.subscription-section-right h1 {
+.subscription-section-right {
+  width: 550px;
+
+  h1 {
   font-weight: 700;
   text-align: center;
+}
 }
 
 .subscription-input-group {

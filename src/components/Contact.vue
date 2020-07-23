@@ -103,14 +103,9 @@ export default {
 <style lang="scss" scoped>
 .contact-layout {
   width: 100%;
-  height: 750px;
+  height: 100%;
+  padding-bottom: 100px;
   background-color: #f2f2f2;
-  @media (max-width: 991px) {
-    height: 1200px;
-  }
-   @media (max-width: 500px) {
-    height: 1300px;
-  }
 }
 
 .contact-header {

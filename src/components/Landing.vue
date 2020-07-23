@@ -1,7 +1,7 @@
 <template>
   <div class="landing-layout">
-    <div class="landing-image">
-      <img :src="require('@/assets/images/LandingImage.png')" />
+    <div class="landing-image-container">
+      <img :src="require('@/assets/images/LandingImage.png')" class="landing-image" />
     </div>
     <div class="container landing-items">
       <div class="landing-section-left">
@@ -13,7 +13,7 @@
         </div>
       </div>
       <div class="landing-section-right">
-        <div class="landing-image-container">
+        <div class="landing-mobile-container">
           <div class="landing-mobile-big">
             <img :src="require('@/assets/images/LandingMobile_bg.png')" />
           </div>
@@ -44,13 +44,19 @@ export default {
   overflow: hidden;
 }
 
-.landing-image {
+.landing-image-container {
   position: absolute;
   max-width: 100%;
-  width: auto;
+  width: 50%;
   height: auto;
   bottom: 0;
   right: 0;
+  z-index: 1;
+}
+
+.landing-image{
+  width: 100%;
+  height: auto;
 }
 
 .landing-items {
@@ -64,6 +70,8 @@ export default {
 .landing-section-left {
   order: 1;
   width: 400px;
+  z-index: 1;
+
 }
 
 .landing-section-left h1 {
@@ -96,7 +104,7 @@ export default {
   z-index: 1;
 }
 
-.landing-image-container {
+.landing-mobile-container {
   width: 250px;
   height: 100%;
 }
@@ -107,7 +115,7 @@ export default {
 }
 
 @media (max-width: 991px) {
-  .landing-image-container {
+  .landing-mobile-container {
     display: flex;
     justify-content: center;
     width: 50%;

@@ -31,7 +31,10 @@
       </div>
 
       <div class="news-button-container">
-        <button v-bind:class="[isClicked ? viewAllButtonClose :viewAllButtonOpen]" @click="viewAllNews()">View All News</button>
+        <button
+          v-bind:class="[isClicked ? viewAllButtonClose :viewAllButtonOpen]"
+          @click="viewAllNews()"
+        >View All News</button>
       </div>
     </div>
   </div>
@@ -42,7 +45,7 @@ export default {
   name: "News",
   data: () => {
     return {
-      isClicked:false,
+      isClicked: false,
       viewAllButtonOpen: "news-button-open",
       viewAllButtonClose: "news-button-close",
       news: [
@@ -50,21 +53,21 @@ export default {
           id: 0,
           title: "Lobbi First Launch 2020",
           description:
-            "Lorem ipsum dolor sit amet consectetur adipiscing elit. Nunc mattis ligula pellentesque nisi tristique porta. Vestibulum eget nisi est. Vivamus pharetra..."
+            "Lorem ipsum dolor sit amet consectetur adipiscing elit. Nunc mattis ligula pellentesque nisi tristique porta. Vestibulum eget nisi est. Vivamus pharetra...",
         },
         {
           id: 1,
           title: "Design The App Of The Future",
           description:
-            "Lorem ipsum dolor sit amet consectetur adipiscing elit. Nunc mattis ligula pellentesque nisi tristique porta. Vestibulum eget nisi est. Vivamus pharetra..."
+            "Lorem ipsum dolor sit amet consectetur adipiscing elit. Nunc mattis ligula pellentesque nisi tristique porta. Vestibulum eget nisi est. Vivamus pharetra...",
         },
         {
           id: 2,
           title: "We Help You Managing Your...",
           description:
-            "Lorem ipsum dolor sit amet consectetur adipiscing elit. Nunc mattis ligula pellentesque nisi tristique porta. Vestibulum eget nisi est. Vivamus pharetra..."
-        }
-      ]
+            "Lorem ipsum dolor sit amet consectetur adipiscing elit. Nunc mattis ligula pellentesque nisi tristique porta. Vestibulum eget nisi est. Vivamus pharetra...",
+        },
+      ],
     };
   },
   methods: {
@@ -76,28 +79,28 @@ export default {
           id: 3,
           title: "Lobbi First Launch 2020",
           description:
-            "Lorem ipsum dolor sit amet consectetur adipiscing elit. Nunc mattis ligula pellentesque nisi tristique porta. Vestibulum eget nisi est. Vivamus pharetra..."
+            "Lorem ipsum dolor sit amet consectetur adipiscing elit. Nunc mattis ligula pellentesque nisi tristique porta. Vestibulum eget nisi est. Vivamus pharetra...",
         },
         {
           id: 4,
           title: "Design The App Of The Future",
           description:
-            "Lorem ipsum dolor sit amet consectetur adipiscing elit. Nunc mattis ligula pellentesque nisi tristique porta. Vestibulum eget nisi est. Vivamus pharetra..."
+            "Lorem ipsum dolor sit amet consectetur adipiscing elit. Nunc mattis ligula pellentesque nisi tristique porta. Vestibulum eget nisi est. Vivamus pharetra...",
         },
         {
           id: 5,
           title: "We Help You Managing Your...",
           description:
-            "Lorem ipsum dolor sit amet consectetur adipiscing elit. Nunc mattis ligula pellentesque nisi tristique porta. Vestibulum eget nisi est. Vivamus pharetra..."
-        }
+            "Lorem ipsum dolor sit amet consectetur adipiscing elit. Nunc mattis ligula pellentesque nisi tristique porta. Vestibulum eget nisi est. Vivamus pharetra...",
+        },
       ];
       if (currentNews.length < 6) {
         for (var i = 0; i < addNews.length; i++) {
           this.news.push(addNews[i]);
         }
       }
-    }
-  }
+    },
+  },
 };
 </script>
 
@@ -131,8 +134,9 @@ export default {
 }
 
 .news-card {
+  min-width: 300px;
   width: 300px;
-  height: 400px;
+  min-height: 400px;
   margin-bottom: 30px;
   background-color: rgb(248, 247, 247);
 }
@@ -145,13 +149,13 @@ export default {
 .news-card-content-container {
   position: relative;
   width: 100%;
-  height: 220px;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   padding: 20px;
   color: #3d3d3d;
-  // border: solid;
+  overflow: hidden;
 
   hr {
     width: 100%;

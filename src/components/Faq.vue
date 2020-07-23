@@ -123,10 +123,8 @@ export default {
 <style lang="scss" scoped>
 .faq-layout {
   width: 100%;
-  height: 900px;
-  @media (max-width: 1200px) {
-    height: 1100px;
-  }
+  height: 100%;
+  margin-bottom: 100px;
 }
 .faq-header {
   display: flex;
@@ -148,7 +146,7 @@ export default {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-end;
-  height: 510px;
+  height: 100%;
   @media (max-width: 1200px) {
     justify-content: center;
   }
