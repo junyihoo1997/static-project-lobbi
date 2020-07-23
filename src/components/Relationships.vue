@@ -10,6 +10,9 @@
           />
         </div>
       </div>
+      <div class="relationship-section-middle">
+        <hr class="relationshop-hr" />
+      </div>
       <div class="relationship-section-right">
         <h1>Bridging Relationships</h1>
         <div class="relationship-description">Texting, voice &amp; video call in your fingertips</div>
@@ -26,8 +29,8 @@
 export default {
   name: "Relationships",
   props: {
-    msg: String
-  }
+    msg: String,
+  },
 };
 </script>
 
@@ -55,7 +58,7 @@ export default {
 }
 
 .relationship-section-right {
-  order: 2;
+  order: 3;
   width: 450px;
 }
 
@@ -94,9 +97,9 @@ export default {
   }
 }
 
-@media(max-width: 420px){
-   .relationship-button-group {
-    justify-content: center!important;
+@media (max-width: 420px) {
+  .relationship-button-group {
+    justify-content: center !important;
   }
 }
 
@@ -134,5 +137,20 @@ export default {
   color: #ffffff;
   margin-bottom: 10px;
   outline: none;
+}
+
+.relationship-section-middle {
+  order: 2;
+  width: 150px;
+  margin-bottom: 100px;
+  margin-left: 40px;
+  .relationshop-hr {
+    display: block;
+    border-width: 3px;
+    width: 100%;
+  }
+  @media (max-width: 1200px) {
+    display: none;
+  }
 }
 </style>

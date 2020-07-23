@@ -6,10 +6,12 @@
           <h1>Capturing Moments</h1>
           <div class="moment-description">Keep &amp; share your precious experiences with others</div>
         </div>
-
         <div class="moment-button-group">
           <button class="moment-button">Learn More</button>
         </div>
+      </div>
+      <div class="moment-section-middle">
+        <hr class="moment-hr" />
       </div>
       <div class="moment-section-right">
         <div class="moment-image-container">
@@ -28,8 +30,8 @@
 export default {
   name: "Moments",
   props: {
-    msg: String
-  }
+    msg: String,
+  },
 };
 </script>
 
@@ -56,7 +58,7 @@ export default {
   display: flex;
   justify-content: center;
   width: 400px;
-  order: 2;
+  order: 3;
 }
 
 .moment-image-container {
@@ -110,5 +112,20 @@ export default {
   padding: 5px 55px 5px 55px;
   outline: none;
   color: #ffffff;
+}
+
+.moment-section-middle {
+  order: 2;
+  width: 150px;
+  margin-bottom: 100px;
+  margin-left: -300px;
+  .moment-hr {
+    display: block;
+    border-width: 3px;
+    width: 100%;
+  }
+  @media (max-width: 1200px) {
+    display: none;
+  }
 }
 </style>

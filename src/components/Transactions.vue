@@ -10,12 +10,14 @@
           />
         </div>
       </div>
+      <div class="transaction-section-middle">
+        <hr class="transaction-hr" />
+      </div>
       <div class="transaction-section-right">
         <div class="transaction-content">
           <h1>Digitalizing Transactions</h1>
           <div class="transaction-description">Secure platform to perform online transactions</div>
         </div>
-
         <div class="transaction-button-group">
           <button class="transaction-button">Learn More</button>
         </div>
@@ -28,8 +30,8 @@
 export default {
   name: "Transactions",
   props: {
-    msg: String
-  }
+    msg: String,
+  },
 };
 </script>
 
@@ -46,7 +48,7 @@ export default {
   height: 100%;
 }
 .transaction-section-right {
-  order: 2;
+  order: 3;
   h1 {
     color: #fe5129;
     font-size: 1.75rem;
@@ -112,5 +114,20 @@ export default {
   padding: 5px 55px 5px 55px;
   color: #ffffff;
   outline: none;
+}
+
+.transaction-section-middle {
+  order: 2;
+  width: 150px;
+  margin-bottom: 100px;
+  margin-left: 40px;
+  .transaction-hr {
+    display: block;
+    border-width: 3px;
+    width: 100%;
+  }
+  @media (max-width: 1200px) {
+    display: none;
+  }
 }
 </style>
