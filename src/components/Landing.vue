@@ -8,8 +8,10 @@
         <h1>An App For Anything And Everything</h1>
         <p>The most useful app you'll ever use</p>
         <br />
-        <div class="landing-button">
-          <img :src="require('@/assets/images/LandingButton.png')" />
+        <div class="landing-button-container">
+          <div class="landing-button">
+            <img :src="require('@/assets/images/LandingButton.png')" class="landing-image" />
+          </div>
         </div>
       </div>
       <div class="landing-section-right">
@@ -21,6 +23,15 @@
             <img :src="require('@/assets/images/LandingMobile_sm.png')" />
           </div>
         </div>
+        <!-- For future use -->
+        <!-- <div class="landing-mobile-container-phoneview">
+          <div class="landing-mobile-big-phoneview">
+            <img :src="require('@/assets/images/LandingMobile_bg.png')" class="landing-image" />
+          </div>
+          <div class="landing-mobile-small-phoneview">
+            <img :src="require('@/assets/images/LandingMobile_sm.png')" class="landing-image" />
+          </div>
+        </div>-->
       </div>
     </div>
   </div>
@@ -30,8 +41,8 @@
 export default {
   name: "Landing",
   props: {
-    msg: String
-  }
+    msg: String,
+  },
 };
 </script>
 
@@ -54,7 +65,7 @@ export default {
   z-index: 1;
 }
 
-.landing-image{
+.landing-image {
   width: 100%;
   height: auto;
 }
@@ -71,7 +82,6 @@ export default {
   order: 1;
   width: 400px;
   z-index: 1;
-
 }
 
 .landing-section-left h1 {
@@ -88,8 +98,20 @@ export default {
   width: 400px;
 }
 
-.landing-button:hover {
-  cursor: pointer;
+.landing-button-container {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  @media (max-width: 991px) {
+    justify-content: center;
+  }
+}
+
+.landing-button {
+  width: 280px;
+  :hover {
+    cursor: pointer;
+  }
 }
 
 .landing-mobile-big {
@@ -106,7 +128,10 @@ export default {
 
 .landing-mobile-container {
   width: 250px;
-  height: 100%;
+  height: auto;
+  @media (max-width: 991px) {
+    display: none;
+  }
 }
 
 .landing-mobile-image {
@@ -114,22 +139,41 @@ export default {
   height: auto;
 }
 
+// For Future use
+
+// .landing-mobile-container-phoneview {
+//   display: none;
+//   @media (max-width: 991px) {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     .landing-mobile-big-phoneview {
+//       position: absolute;
+//       width: 120px;
+
+//       z-index: 2;
+//     }
+//     .landing-mobile-small-phoneview {
+//       position: relative;
+//       width: 100px;
+//       left: 85px;
+//       z-index: 1;
+//     }
+//   }
+// }
+
 @media (max-width: 991px) {
-  .landing-mobile-container {
-    display: flex;
-    justify-content: center;
-    width: 50%;
-  }
-  .landing-mobile-image {
-    width: 50%;
-    height: auto;
-  }
   .landing-items {
     justify-content: center;
+    align-items: center;
+    text-align: center;
   }
   .landing-section-right {
     display: none;
     order: 1;
+  }
+  .landing-section-left {
+    order: 2;
   }
 }
 </style>

@@ -39,6 +39,8 @@ export default {
 .subscription-layout {
   width: 100%;
   height: 500px;
+  overflow: hidden;
+
   background-color: #f2f2f2;
 }
 .subscription-items {
