@@ -46,17 +46,19 @@ export default {
     News,
     Map,
     Contact,
-    Footer
+    Footer,
   },
-  mounted(){
-    console.log("To clear this error, please provide your own Google Map Api Key for google map feature. As tested at my side location is correct.")
-  }
+  mounted() {
+    console.log(
+      "To clear this error, please provide your own Google Map Api Key for google map feature. The api key will be exposed in github if I provided here. As tested at my side location is correct."
+    );
+  },
 };
 </script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  /* font-family: Avenir, Helvetica, Arial, sans-serif; */
   font-size: 1rem;
 }
 </style>

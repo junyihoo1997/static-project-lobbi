@@ -23,15 +23,6 @@
             <img :src="require('@/assets/images/LandingMobile_sm.png')" />
           </div>
         </div>
-        <!-- For future use -->
-        <!-- <div class="landing-mobile-container-phoneview">
-          <div class="landing-mobile-big-phoneview">
-            <img :src="require('@/assets/images/LandingMobile_bg.png')" class="landing-image" />
-          </div>
-          <div class="landing-mobile-small-phoneview">
-            <img :src="require('@/assets/images/LandingMobile_sm.png')" class="landing-image" />
-          </div>
-        </div>-->
       </div>
     </div>
   </div>
@@ -138,29 +129,6 @@ export default {
   width: 100%;
   height: auto;
 }
-
-// For Future use
-
-// .landing-mobile-container-phoneview {
-//   display: none;
-//   @media (max-width: 991px) {
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     .landing-mobile-big-phoneview {
-//       position: absolute;
-//       width: 120px;
-
-//       z-index: 2;
-//     }
-//     .landing-mobile-small-phoneview {
-//       position: relative;
-//       width: 100px;
-//       left: 85px;
-//       z-index: 1;
-//     }
-//   }
-// }
 
 @media (max-width: 991px) {
   .landing-items {

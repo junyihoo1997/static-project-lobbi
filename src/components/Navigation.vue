@@ -20,22 +20,22 @@
         <ul class="navbar-nav mr-auto"></ul>
         <ul class="navbar-nav form-inline my-2 my-lg-0">
           <li class="nav-item">
-            <a class="nav-link" href="#">What is Lobbi</a>
+            <a class="nav-link" href="#what-is-lobbi">What is Lobbi</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Lobbi Web</a>
+            <a class="nav-link" href="#lobbi-web">Lobbi Web</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Features</a>
+            <a class="nav-link" href="#features">Features</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">News</a>
+            <a class="nav-link" href="#news">News</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Faq</a>
+            <a class="nav-link" href="#faq">Faq</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="#contact">
               Contact
               <img
                 :src="require('@/assets/images/SearchIcon.png')"

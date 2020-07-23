@@ -47,7 +47,12 @@
           </div>
         </div>
         <div class="whyLobbi-section-middle">
-          <img :src="require('@/assets/images/WhyLobbiMobile.png')" class="whyLobbi-mobile-image" />
+          <div class="whyLobbi-mobile-gif-container">
+            <img :src="require('@/assets/images/WhyLobbi.gif')" class="whyLobbi-mobile-gif" />
+          </div>
+          <div class="whyLobbi-mobile-image-container">
+            <img :src="require('@/assets/images/WhyLobbiMobile.png')" class="whyLobbi-mobile-image" />
+          </div>
         </div>
         <div class="whyLobbi-section-right">
           <div class="whyLobbi-content-right">
@@ -100,14 +105,15 @@
 
 <script>
 export default {
-  name: "WhyLobbi"
+  name: "WhyLobbi",
 };
 </script>
 
 <style lang="scss" scoped>
 .whyLobbi-layout {
   width: 100%;
-  height: 900px;
+  height: 100%;
+  margin-bottom: 100px;
 }
 .whyLobbi-header {
   display: flex;
@@ -212,9 +218,6 @@ export default {
   .whyLobbi-items {
     flex-direction: column;
   }
-  .whyLobbi-layout {
-    height: 1400px;
-  }
 
   .whyLobbi-section-middle {
     width: 150px;
@@ -254,10 +257,6 @@ export default {
     width: 350px;
   }
 
-  .whyLobbi-layout {
-    height: 1500px;
-  }
-
   .whyLobbi-section-right {
     padding: 10px;
     width: 350px;
@@ -286,6 +285,34 @@ export default {
   }
   .whyLobbi-content-container-left {
     width: 200px;
+  }
+}
+
+.whyLobbi-mobile-image-container {
+  width: 100%;
+}
+
+.whyLobbi-mobile-gif-container {
+  width: 100%;
+}
+
+.whyLobbi-mobile-image {
+  width: 100%;
+  height: auto;
+  z-index: 2;
+  position: relative;
+}
+
+.whyLobbi-mobile-gif {
+  max-width: 255px;
+  height: auto;
+  position: absolute;
+  margin-left: 5px;
+  border-radius: 20px;
+  z-index: 2;
+
+  @media (max-width: 1200px) {
+    max-width: 145px;
   }
 }
 </style>

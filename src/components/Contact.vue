@@ -48,15 +48,17 @@
         <!-- section right -->
         <div class="contact-section-right">
           <b>Drop us a message for business opportunity.</b>
-          <div>
-            <input class="contact-form-input" type="text" name="name" placeholder="Name" />
-            <input class="contact-form-input" type="text" name="mobile" placeholder="Mobile" />
-            <input class="contact-form-input" type="text" name="email" placeholder="Email" />
-            <textarea class="contact-form-textarea" name="message" placeholder="Message"></textarea>
-          </div>
-          <div class="contact-submit">
-            <input type="Submit" value="Submit &gt;" />
-          </div>
+          <form action>
+            <div>
+              <input class="contact-form-input" type="text" name="name" placeholder="Name" />
+              <input class="contact-form-input" type="text" name="mobile" placeholder="Mobile" />
+              <input class="contact-form-input" type="text" name="email" placeholder="Email" />
+              <textarea class="contact-form-textarea" name="message" placeholder="Message"></textarea>
+            </div>
+            <div class="contact-submit">
+              <input type="Submit" value="Submit &gt;" />
+            </div>
+          </form>
         </div>
       </div>
     </div>
@@ -74,29 +76,29 @@ export default {
           imageUrl: "AddressIcon.png",
           title: "Address",
           description:
-            "29, Level 10, The Boulevard Office, Linkaran Syed Putra, Mid Valley City, 59200 Kuala Lumpur"
+            "29, Level 10, The Boulevard Office, Linkaran Syed Putra, Mid Valley City, 59200 Kuala Lumpur",
         },
         {
           id: 1,
           imageUrl: "WorkIcon.png",
           title: "Working Hours",
-          description: "9am - 6pm"
+          description: "9am - 6pm",
         },
         {
           id: 2,
           imageUrl: "PhoneIcon.png",
           title: "Tel",
-          description: "014 - 963 9067"
+          description: "014 - 963 9067",
         },
         {
           id: 3,
           imageUrl: "EmailIcon.png",
           title: "Email",
-          description: "hello@lobbi.com.my"
-        }
-      ]
+          description: "hello@lobbi.com.my",
+        },
+      ],
     };
-  }
+  },
 };
 </script>
 
@@ -226,7 +228,7 @@ export default {
 .contact-section-left-header {
   h1 {
     font-weight: 700;
-    color: #FE5129;
+    color: #fe5129;
   }
 }
 

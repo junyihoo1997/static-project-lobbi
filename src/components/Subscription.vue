@@ -31,7 +31,7 @@
 
 <script>
 export default {
-  name: "Subscription"
+  name: "Subscription",
 };
 </script>
 
@@ -70,9 +70,9 @@ export default {
   width: 550px;
 
   h1 {
-  font-weight: 700;
-  text-align: center;
-}
+    font-weight: 700;
+    text-align: center;
+  }
 }
 
 .subscription-input-group {

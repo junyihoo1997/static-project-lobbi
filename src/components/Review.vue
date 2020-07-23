@@ -36,7 +36,7 @@
 
 <script>
 export default {
-  name: "Review"
+  name: "Review",
 };
 </script>
 

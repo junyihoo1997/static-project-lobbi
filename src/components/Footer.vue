@@ -1,6 +1,6 @@
 <template>
   <div class="footer-layout">
-    <div class="footer-items">
+    <div class="footer-items container">
       <div
         class="footer-section-left"
       >Copyright © 2020 Newsoft IT Solution Sdn Bhd. All Rights Reserved.</div>
@@ -91,5 +91,4 @@ export default {};
     color: #ffffff;
   }
 }
-
 </style>

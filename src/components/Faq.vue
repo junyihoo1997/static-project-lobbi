@@ -63,44 +63,44 @@ export default {
           open: true,
           title: "What is Lobbi?",
           description:
-            "Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur vel illum qui dolorem eum fugiat quo."
+            "Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur vel illum qui dolorem eum fugiat quo.",
         },
         {
           id: 1,
           open: false,
           title: "How do I sign up for Lobbi?",
           description:
-            "Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur vel illum qui dolorem eum fugiat quo."
+            "Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur vel illum qui dolorem eum fugiat quo.",
         },
         {
           id: 2,
           open: false,
           title: "What make Lobbi different from other app?",
           description:
-            "Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur vel illum qui dolorem eum fugiat quo."
+            "Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur vel illum qui dolorem eum fugiat quo.",
         },
         {
           id: 3,
           open: false,
           title: "What I can do with Lobbi e-wallet?",
           description:
-            "Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur vel illum qui dolorem eum fugiat quo."
+            "Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur vel illum qui dolorem eum fugiat quo.",
         },
         {
           id: 4,
           open: false,
           title: "How do I sign up for Lobbi?",
           description:
-            "Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur vel illum qui dolorem eum fugiat quo."
+            "Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur vel illum qui dolorem eum fugiat quo.",
         },
         {
           id: 5,
           open: false,
           title: "How do I sign up for Lobbi?",
           description:
-            "Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur vel illum qui dolorem eum fugiat quo."
-        }
-      ]
+            "Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur vel illum qui dolorem eum fugiat quo.",
+        },
+      ],
     };
   },
   methods: {
@@ -115,8 +115,8 @@ export default {
           allFaq[currentFaqId].open = false;
         }
       }
-    }
-  }
+    },
+  },
 };
 </script>
 

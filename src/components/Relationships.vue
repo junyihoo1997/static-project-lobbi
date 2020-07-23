@@ -72,6 +72,20 @@ export default {
 .relationship-image-container {
   width: 100%;
   height: 100%;
+  transform: translatey(0px);
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-10px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
 }
 
 @media (max-width: 991px) {
