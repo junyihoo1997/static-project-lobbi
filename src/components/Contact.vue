@@ -76,7 +76,7 @@ export default {
           imageUrl: "AddressIcon.png",
           title: "Address",
           description:
-            "29, Level 10, The Boulevard Office, Linkaran Syed Putra, Mid Valley City, 59200 Kuala Lumpur",
+            "55, Level 22, The Boulevard Office, Linkaran Syed Putra, Mid Valley City, 59200 Kuala Lumpur",
         },
         {
           id: 1,
