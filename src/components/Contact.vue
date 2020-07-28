@@ -235,5 +235,8 @@ export default {
 .contact-section-left-social-image-group {
   margin-top: 10px;
   display: flex;
+  img:hover{
+    cursor: pointer;
+  }
 }
 </style>

@@ -64,6 +64,9 @@ export default {
 
 .subscription-image-button {
   padding: 15px;
+  img:hover{
+    cursor: pointer;
+  }
 }
 
 .subscription-section-right {
