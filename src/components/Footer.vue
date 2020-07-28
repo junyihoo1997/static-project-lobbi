@@ -3,7 +3,7 @@
     <div class="footer-items container">
       <div
         class="footer-section-left"
-      >Copyright © 2020 Testing Web Design. All Rights Reserved.</div>
+      >Copyright © 2020 Newsoft IT Solution Sdn Bhd. All Rights Reserved.</div>
       <div class="footer-section-right">
         <div class="footer-content">
           <ul>
